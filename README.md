@@ -1,150 +1,37 @@
 # CarCenter Panamá
 
-CarCenter Panamá es un proyecto web estático desarrollado como proyecto final utilizando **HTML, CSS y JavaScript**.
+Proyecto final de la clase de Programación Web. Es el sitio de una agencia de autos hecho en HTML, CSS y JavaScript puro, sin frameworks.
 
-El sitio simula una plataforma automotriz donde el visitante puede explorar vehículos, filtrar modelos, comparar alternativas, guardar favoritos en un garage personal, conocer tecnologías de conducción y solicitar una visita orientativa.
+Demo: https://jeang507.github.io/carcenter-panama/
 
-## Objetivo del proyecto
+## La idea
 
-Crear una experiencia web organizada y visualmente coherente alrededor de la temática automotriz.
+Simular el sitio de una agencia real donde el usuario puede ver el catálogo, comparar autos, guardar sus favoritos, revisar algo de tecnología del vehículo, ver dónde queda la agencia y por último dejar sus datos de contacto.
 
-La historia del sitio sigue el recorrido de una persona que busca un vehículo:
-
-1. Entra a la página principal y conoce CarCenter.
-2. Explora los modelos disponibles en el catálogo.
-3. Filtra y busca vehículos según sus intereses.
-4. Revisa imágenes en la galería.
-5. Compara modelos mediante una tabla dinámica.
-6. Guarda sus opciones favoritas en **Mi Garage**.
-7. Conoce los modos de conducción mediante un Canvas interactivo.
-8. Consulta la ubicación de CarCenter.
-9. Completa un formulario para solicitar orientación.
-
-## Tecnologías utilizadas
-
-- HTML5
-- CSS3
-- JavaScript
-- Font Awesome
-- Swiper.js
-- Lightbox2
-- Parsley.js
-- OpenStreetMap mediante iframe
-
-## Estructura del proyecto
-
-```text
-CarCenter/
-├── index.html
-├── catalogo.html
-├── galeria.html
-├── comparador.html
-├── garage.html
-├── evolucion.html
-├── visita.html
-├── contacto.html
-├── css/
-│   └── estilos.css
-├── js/
-│   ├── main.js
-│   ├── catalogo.js
-│   ├── comparador.js
-│   ├── garage.js
-│   ├── evolucion.js
-│   └── contacto.js
-├── img/
-│   ├── autos/
-│   └── logos/
-└── README.md
-```
-
-## Cómo ejecutar el proyecto
-
-No requiere instalación de dependencias ni servidor backend.
-
-Desde la carpeta principal del proyecto, ejecuta:
+## Cómo correrlo
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Luego abre en el navegador:
+Y se abre `http://localhost:8000` en el navegador. Hace falta el servidor porque si no, algunas rutas relativas y el fetch de los datos no cargan bien.
 
-```text
-http://localhost:8000
-```
+## Qué hay en cada página
 
-También puede ejecutarse abriendo `index.html` directamente, aunque se recomienda usar un servidor local para trabajar de forma más estable.
+- **Catálogo**: 33 vehículos de 5 marcas, con buscador y filtros funcionando.
+- **Galería**: fotos de los autos con Lightbox2.
+- **Comparador**: se eligen dos autos y arma una tabla con las specs.
+- **Mi Garage**: drag & drop para guardar autos favoritos, y queda guardado con localStorage aunque se recargue la página.
+- **Evolución**: un canvas interactivo con modos ECO, NORMAL y SPORT.
+- **Visítanos**: mapa de OpenStreetMap con la ubicación de la agencia.
+- **Contacto**: formulario validado con Parsley.js.
 
-## Funcionalidades principales
+La página principal también tiene un carrusel con Swiper.js y un contador regresivo que cambia cada mes.
 
-### Página principal
+## Tecnologías
 
-- Diseño visual de bienvenida para CarCenter Panamá.
-- Carrusel de vehículos destacados con Swiper.js.
-- Contador regresivo mensual.
-- Accesos directos al catálogo y al formulario de contacto.
-
-### Catálogo de vehículos
-
-- Catálogo integrado con 33 vehículos.
-- Buscador por marca, modelo o categoría.
-- Filtros por SUV, sedán, híbridos y otras categorías.
-- Botón para agregar vehículos a Mi Garage.
-
-### Galería
-
-- Galería visual de vehículos.
-- Ampliación de imágenes mediante Lightbox2.
-
-### Comparador
-
-- Tabla dinámica para comparar características de distintos vehículos.
-- Comparación de marca, motor, transmisión, combustible, categoría y precio.
-
-### Mi Garage
-
-- Funcionalidad de Drag and Drop.
-- Permite arrastrar vehículos al área de favoritos.
-- Opción para eliminar vehículos guardados.
-- Persistencia de favoritos mediante LocalStorage.
-
-### Tecnología
-
-- Canvas interactivo que representa modos de conducción:
-  - ECO
-  - NORMAL
-  - SPORT
-- Cada modo modifica visualmente el tablero y su información.
-
-### Visítanos
-
-- Mapa integrado mediante iframe de OpenStreetMap.
-- Información de ubicación, horarios y contacto.
-
-### Contacto
-
-- Formulario organizado y validado con Parsley.js.
-- Validación visible para campos obligatorios.
-- Mensaje de confirmación después de completar la solicitud.
-
-## Criterios implementados
-
-El proyecto incorpora los elementos solicitados para el proyecto final:
-
-- Estructura general del sitio web.
-- Historia relacionada con la temática automotriz.
-- Uso de iframe.
-- Incorporación de imágenes.
-- Drag and Drop.
-- Uso de tablas.
-- Enlaces internos y externos.
-- Canvas interactivo.
-- Formularios validados.
-- Plugins y librerías externas.
-- Contador regresivo.
-- Diseño responsive para distintos tamaños de pantalla.
+HTML5, CSS3, JavaScript (vanilla) y las librerías Lightbox2, Swiper.js y Parsley.js.
 
 ## Nota
 
-CarCenter Panamá es un proyecto web estático. La información presentada sobre vehículos, precios, disponibilidad y contacto se utiliza únicamente dentro de la experiencia visual del sitio. No realiza pagos reales ni almacena información en un servidor.
+Los datos e imágenes de los autos son solo para la demostración del proyecto, no es una agencia ni inventario real.
