@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CarCenter Panamá: catálogo, comparación y selección de vehículos.">
+
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+
+  <title>Inicio | CarCenter Panamá</title>
+</head>
+
+<body>
+
+<header class="public-header">
+  <div class="header-container">
+
+    <div class="header-left">
+      <a class="public-logo" href="index.html" aria-label="CarCenter, inicio">
+        Car<span>Center</span>
+        <small>Servicios Automotrices</small>
+      </a>
+    </div>
+
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-label="Abrir menú"
+      aria-expanded="false"
+      aria-controls="main-navigation"
+    >
+      <i class="fa-solid fa-bars" aria-hidden="true"></i>
+    </button>
+
+    <nav
+      class="public-nav main-nav"
+      id="main-navigation"
+      aria-label="Navegación principal"
+    >
+      <a href="index.html" class="activo" aria-current="page">Inicio</a>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="galeria.html">Galería</a>
+      <a href="comparador.html">Comparador</a>
+      <a href="evolucion.html">Tecnología</a>
+      <a href="visita.html">Visítanos</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <div class="header-right">
+
+      <nav class="social-icons" aria-label="Redes sociales">
+        <a
+          href="https://www.facebook.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Abrir Facebook"
+          title="Facebook"
+        >
+          <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+        </a>
+
+        <a
+          href="https://www.instagram.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Abrir Instagram"
+          title="Instagram"
+        >
+          <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Abrir LinkedIn"
+          title="LinkedIn"
+        >
+          <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+        </a>
+      </nav>
+
+      <a href="garage.html" class="login-link">
+        Mi Garage
+        <span id="garage-count" class="garage-count" aria-label="Vehículos guardados">0</span>
+      </a>
+
+    </div>
+  </div>
+</header>
+
+<main id="contenido-principal">
+
+  <section class="hero">
+    <div class="hero-inner">
+
+      <div>
+        <span class="eyebrow">CarCenter Panamá</span>
+
+        <h1>
+          Encuentra el auto que acompaña tu
+          <span>próximo paso.</span>
+        </h1>
+
+        <p class="hero-copy">
+          Explora SUV, sedanes y modelos para cada estilo de vida. Compara opciones,
+          conoce sus detalles y crea una selección que se adapte a ti.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button" href="catalogo.html">
+            <i class="fa-solid fa-car" aria-hidden="true"></i>
+            Ver catálogo
+          </a>
+
+          <a class="button-outline" href="contacto.html">
+            Solicitar información
+          </a>
+        </div>
+
+        <div class="hero-note">
+          <span>
+            <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+            Atención personalizada
+          </span>
+
+          <span>
+            <i class="fa-solid fa-arrow-right-arrow-left" aria-hidden="true"></i>
+            Comparación sencilla
+          </span>
+
+          <span>
+            <i class="fa-solid fa-heart" aria-hidden="true"></i>
+            Selecciona tus favoritos
+          </span>
+        </div>
+
+        <div class="countdown-card" aria-live="polite">
+          <div class="countdown-heading">
+            <strong>Beneficios de este mes</strong>
+            <span>Finalizan en</span>
+          </div>
+
+          <div class="countdown">
+            <div class="time-box">
+              <b id="count-days">00</b>
+              <small>Días</small>
+            </div>
+
+            <div class="time-box">
+              <b id="count-hours">00</b>
+              <small>Horas</small>
+            </div>
+
+            <div class="time-box">
+              <b id="count-minutes">00</b>
+              <small>Minutos</small>
+            </div>
+
+            <div class="time-box">
+              <b id="count-seconds">00</b>
+              <small>Segundos</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="swiper hero-swiper"
+        aria-label="Vehículos destacados"
+      >
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <article class="hero-slide">
+              <img
+                src="img/autos/honda/honda-pilot-lx-2026-20260628103600-09a82c.jpg"
+                alt="Honda Pilot LX 2026 color gris"
+                fetchpriority="high"
+              >
+
+              <div class="hero-caption">
+                <span>SUV familiar</span>
+                <strong>Espacio para llegar más lejos.</strong>
+              </div>
+            </article>
+          </div>
+
+          <div class="swiper-slide">
+            <article class="hero-slide sportage">
+              <img
+                src="img/autos/kia/kia-sportage-2026-20260628085603-379a88.jpg"
+                alt="Kia Sportage 2026"
+                loading="lazy"
+              >
+
+              <div class="hero-caption">
+                <span>Kia Sportage</span>
+                <strong>Diseño que se nota desde el primer vistazo.</strong>
+              </div>
+            </article>
+          </div>
+
+          <div class="swiper-slide">
+            <article class="hero-slide">
+              <img
+                src="img/autos/toyota/auto_1781993088.png"
+                alt="Toyota Land Cruiser Prado"
+                loading="lazy"
+              >
+
+              <div class="hero-caption">
+                <span>Todo terreno</span>
+                <strong>Potencia para cada ruta.</strong>
+              </div>
+            </article>
+          </div>
+
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="section-heading">
+        <span class="eyebrow">Todo en un solo lugar</span>
+
+        <h2>
+          Haz una elección
+          <span>con confianza.</span>
+        </h2>
+
+        <p>
+          Conoce los modelos disponibles, revisa sus características principales y guarda
+          los que más encajen con lo que estás buscando.
+        </p>
+      </div>
+
+      <div class="highlights">
+
+        <article class="highlight-card">
+          <div class="icon">
+            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+          </div>
+
+          <h3>Explora</h3>
+          <p>
+            Filtra por categoría y encuentra modelos según tu forma de conducir y tus necesidades.
+          </p>
+        </article>
+
+        <article class="highlight-card">
+          <div class="icon">
+            <i class="fa-solid fa-scale-balanced" aria-hidden="true"></i>
+          </div>
+
+          <h3>Compara</h3>
+          <p>
+            Revisa lado a lado los aspectos que importan antes de tomar una decisión.
+          </p>
+        </article>
+
+        <article class="highlight-card">
+          <div class="icon">
+            <i class="fa-solid fa-car-rear" aria-hidden="true"></i>
+          </div>
+
+          <h3>Selecciona</h3>
+          <p>
+            Reúne tus vehículos preferidos en Mi Garage para tenerlos siempre a mano.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section brand-section">
+    <div class="container">
+
+      <div class="section-heading">
+        <span class="eyebrow">Modelos destacados</span>
+
+        <h2>
+          Vehículos que llaman la
+          <span>atención.</span>
+        </h2>
+
+        <p>
+          Una selección para quienes buscan comodidad, rendimiento y una presencia
+          que acompañe cada trayecto.
+        </p>
+      </div>
+
+      <div class="featured-grid">
+
+        <article class="featured-card">
+          <div class="featured-media">
+            <img
+              src="img/autos/toyota/toyota-corolla-2026-20260628073519-78bd60.jpg"
+              alt="Toyota Corolla 2026"
+              loading="lazy"
+              decoding="async"
+            >
+          </div>
+
+          <div class="featured-info">
+            <span class="category">Sedán</span>
+            <h3>Toyota Corolla 2026</h3>
+
+            <p>
+              Equilibrio entre comodidad urbana, eficiencia y diseño elegante.
+            </p>
+
+            <div class="featured-bottom">
+              <span class="price">
+                <small>Desde</small>
+                <strong>B/. 23,000</strong>
+              </span>
+
+              <a class="button-ghost" href="catalogo.html">Ver modelo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="featured-card sportage">
+          <div class="featured-media">
+            <img
+              src="img/autos/kia/kia-sportage-2026-20260628085603-379a88.jpg"
+              alt="Kia Sportage 2026"
+              loading="lazy"
+              decoding="async"
+            >
+          </div>
+
+          <div class="featured-info">
+            <span class="category">SUV</span>
+            <h3>Kia Sportage 2026</h3>
+
+            <p>
+              Una SUV con amplitud, personalidad y manejo pensado para todos los días.
+            </p>
+
+            <div class="featured-bottom">
+              <span class="price">
+                <small>Desde</small>
+                <strong>B/. 28,560</strong>
+              </span>
+
+              <a class="button-ghost" href="catalogo.html">Ver modelo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="featured-card">
+          <div class="featured-media">
+            <img
+              src="img/autos/honda/honda-cr-v-ex-l-hybrid-2024-20260628104145-9452ee.jpg"
+              alt="Honda CR-V EX-L Hybrid"
+              loading="lazy"
+              decoding="async"
+            >
+          </div>
+
+          <div class="featured-info">
+            <span class="category">SUV híbrida</span>
+            <h3>Honda CR-V EX-L Hybrid</h3>
+
+            <p>
+              Confort y eficiencia para acompañar la rutina y las escapadas.
+            </p>
+
+            <div class="featured-bottom">
+              <span class="price">
+                <small>Desde</small>
+                <strong>B/. 30,995</strong>
+              </span>
+
+              <a class="button-ghost" href="catalogo.html">Ver modelo</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="brand-section">
+    <div class="container">
+      <div class="brand-row" aria-label="Marcas disponibles">
+
+        <img src="img/logos/toyota.png" alt="Toyota" loading="lazy">
+        <img src="img/logos/hyundai.png" alt="Hyundai" loading="lazy">
+        <img src="img/logos/kia.png" alt="Kia" loading="lazy">
+        <img src="img/logos/nissan.png" alt="Nissan" loading="lazy">
+        <img src="img/logos/honda.png" alt="Honda" loading="lazy">
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="cta-banner">
+        <div>
+          <h2>¿Ya tienes un modelo en mente?</h2>
+          <p>
+            Escríbenos y recibe orientación para conocer las opciones que mejor se adapten a ti.
+          </p>
+        </div>
+
+        <a class="button" href="contacto.html">
+          Hablar con un asesor
+          <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+
+  <div>
+    <a class="footer-brand" href="index.html">
+      Car<span>Center</span>
+    </a>
+
+    <p>Servicios Automotrices</p>
+  </div>
+
+  <div class="footer-links">
+    <a href="catalogo.html">Catálogo</a>
+    <a href="comparador.html">Comparador</a>
+    <a href="contacto.html">Contacto</a>
+  </div>
+
+  <small>
+    © 2026 CarCenter Panamá.
+  </small>
+
+</footer>
+
+<script src="js/main.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+<script src="js/index.js"></script>
+</body>
+</html>

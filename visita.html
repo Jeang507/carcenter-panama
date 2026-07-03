@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CarCenter Panamá: catálogo, comparación y selección de vehículos.">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <title>Visítanos | CarCenter Panamá</title>
+</head>
+<body>
+<header class="public-header">
+  <div class="header-container">
+    <div class="header-left">
+      <a class="public-logo" href="index.html" aria-label="CarCenter, inicio">Car<span>Center</span><small>Servicios Automotrices</small></a>
+    </div>
+
+    <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-navigation">
+      <i class="fa-solid fa-bars" aria-hidden="true"></i>
+    </button>
+
+    <nav class="public-nav main-nav" id="main-navigation" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="galeria.html">Galería</a>
+        <a href="comparador.html">Comparador</a>
+        <a href="evolucion.html">Tecnología</a>
+        <a href="visita.html" class="activo" aria-current="page">Visítanos</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <div class="header-right">
+      <nav class="social-icons" aria-label="Redes sociales">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Facebook" title="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Instagram" title="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="Abrir LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+      </nav>
+      <a href="garage.html" class="login-link">Mi Garage <span id="garage-count" class="garage-count" aria-label="Vehículos guardados">0</span></a>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Ubicación</span>
+      <h1>Estamos cerca de tu <span>próximo auto.</span></h1>
+      <p>Planifica tu visita, conoce nuestro horario de atención y descubre los modelos que quieres ver de cerca.</p>
+    </div>
+  </section>
+  <section class="section"><div class="container"><div class="visit-grid">
+    <section class="map-frame" aria-label="Mapa de ubicación"><iframe title="Mapa de Ciudad de Panamá" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-79.553%2C8.956%2C-79.504%2C8.995&amp;layer=mapnik"></iframe></section>
+    <aside class="location-card"><h2>Visítanos</h2><p>Agenda una visita y recibe atención para conocer los vehículos que más te interesan.</p>
+      <div class="location-list">
+        <div><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span><strong>Ciudad de Panamá</strong><p>Área céntrica, con acceso desde las principales vías de la ciudad.</p></span></div>
+        <div><i class="fa-solid fa-clock" aria-hidden="true"></i><span><strong>Horario de atención</strong><p>Lunes a viernes: 9:00 a.m. – 6:00 p.m.<br>Sábado: 9:00 a.m. – 3:00 p.m.</p></span></div>
+        <div><i class="fa-solid fa-phone" aria-hidden="true"></i><span><strong>Contáctanos</strong><p>Escríbenos para coordinar tu visita y resolver tus dudas.</p></span></div>
+      </div>
+      <a class="button" href="contacto.html">Agendar una visita <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+    </aside>
+  </div></div></section>
+</main>
+<footer class="site-footer">
+  <div>
+    <a class="footer-brand" href="index.html">Car<span>Center</span></a>
+    <p>Servicios Automotrices</p>
+  </div>
+  <div class="footer-links">
+    <a href="catalogo.html">Catálogo</a>
+    <a href="comparador.html">Comparador</a>
+    <a href="contacto.html">Contacto</a>
+  </div>
+  <small>© 2026 CarCenter Panamá.</small>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

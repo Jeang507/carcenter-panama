@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CarCenter Panamá: catálogo, comparación y selección de vehículos.">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <title>Contacto | CarCenter Panamá</title>
+</head>
+<body>
+<header class="public-header">
+  <div class="header-container">
+    <div class="header-left">
+      <a class="public-logo" href="index.html" aria-label="CarCenter, inicio">Car<span>Center</span><small>Servicios Automotrices</small></a>
+    </div>
+
+    <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-navigation">
+      <i class="fa-solid fa-bars" aria-hidden="true"></i>
+    </button>
+
+    <nav class="public-nav main-nav" id="main-navigation" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="galeria.html">Galería</a>
+        <a href="comparador.html">Comparador</a>
+        <a href="evolucion.html">Tecnología</a>
+        <a href="visita.html">Visítanos</a>
+        <a href="contacto.html" class="activo" aria-current="page">Contacto</a>
+    </nav>
+
+    <div class="header-right">
+      <nav class="social-icons" aria-label="Redes sociales">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Facebook" title="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Instagram" title="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="Abrir LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+      </nav>
+      <a href="garage.html" class="login-link">Mi Garage <span id="garage-count" class="garage-count" aria-label="Vehículos guardados">0</span></a>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Contacto</span>
+      <h1>Estamos listos para ayudarte a encontrar tu <span>próximo auto.</span></h1>
+      <p>Cuéntanos qué modelo te interesa y un asesor podrá orientarte sobre las opciones disponibles.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-layout">
+        <aside class="contact-aside">
+          <h2>Atención personalizada</h2>
+          <p>Déjanos tus datos y prepara tu visita a CarCenter Panamá con la información que necesitas.</p>
+          <ul class="contact-list">
+            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i><span><strong>Conoce los modelos disponibles</strong>Revisa opciones según tus necesidades y estilo de vida.</span></li>
+            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i><span><strong>Resuelve tus dudas</strong>Consulta características, versiones y alternativas de compra.</span></li>
+            <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i><span><strong>Coordina tu visita</strong>Elige una fecha que te resulte conveniente.</span></li>
+          </ul>
+        </aside>
+
+        <form id="form-reserva" class="contact-form" data-parsley-validate novalidate>
+          <h2>Solicita información</h2>
+          <div class="form-grid">
+            <div class="form-field"><label for="nombre">Nombre completo</label><input id="nombre" name="nombre" type="text" required data-parsley-minlength="3" data-parsley-required-message="Escribe tu nombre completo." data-parsley-minlength-message="El nombre debe tener al menos 3 caracteres."></div>
+            <div class="form-field"><label for="correo">Correo electrónico</label><input id="correo" name="correo" type="email" required data-parsley-type-message="Escribe un correo válido." data-parsley-required-message="El correo es obligatorio."></div>
+            <div class="form-field"><label for="telefono">Teléfono</label><input id="telefono" name="telefono" type="tel" required data-parsley-pattern="^[0-9+() -]{7,20}$" data-parsley-pattern-message="Escribe un teléfono válido."></div>
+            <div class="form-field"><label for="fecha">Fecha preferida para visitar</label><input id="fecha" name="fecha" type="date" required data-parsley-required-message="Selecciona una fecha."></div>
+            <div class="form-field full"><label for="modelo">Modelo de interés</label><select id="modelo" name="modelo" required data-parsley-required-message="Selecciona un modelo.">
+<option value="">Selecciona un modelo</option>
+<option>Honda City EX 2024</option>
+<option>Honda Civic Type R</option>
+<option>Honda CR-V EX-L Hybrid</option>
+<option>Honda BR-V 2026</option>
+<option>Honda Pilot LX 2026</option>
+<option>Honda HR-V 2026</option>
+<option>Hyundai Grand i10</option>
+<option>Hyundai Accent</option>
+<option>Hyundai Creta 2026</option>
+<option>Hyundai Creta Grand 2026</option>
+<option>Hyundai Kona 2026</option>
+<option>Hyundai Venue 2026</option>
+<option>Kia K3 Sedán 2024</option>
+<option>Kia Picanto 2024</option>
+<option>Kia Soluto 2024</option>
+<option>Kia Sonet 2024</option>
+<option>Kia Sportage 2026</option>
+<option>Nissan X-Trail 2025</option>
+<option>Nissan Kait Sense CVT 2026</option>
+<option>Nissan Kicks Exclusive 2026</option>
+<option>Nissan Magnite Advance CVT 2025</option>
+<option>Nissan Kicks Sense CVT 2026</option>
+<option>Nissan Pathfinder Advance 2026</option>
+<option>Toyota Innova</option>
+<option>Toyota Yaris</option>
+<option>Toyota Agya</option>
+<option>Toyota Hilux GR Sport</option>
+<option>Toyota Land Cruiser Prado</option>
+<option>Toyota Raize 2026</option>
+<option>Toyota Yaris Cross</option>
+<option>Toyota Coaster</option>
+<option>Toyota Hilux</option>
+<option>Toyota Corolla 2026</option>
+<option>Otro modelo</option>
+            </select></div>
+            <div class="form-field full"><label for="mensaje">Mensaje</label><textarea id="mensaje" name="mensaje" required data-parsley-minlength="10" data-parsley-minlength-message="Escribe al menos 10 caracteres." placeholder="Cuéntanos qué te gustaría conocer del vehículo."></textarea></div>
+          </div>
+          <button class="button" type="submit">Enviar solicitud <i class="fa-solid fa-paper-plane" aria-hidden="true"></i></button>
+          <div id="form-success" class="form-success" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div>
+    <a class="footer-brand" href="index.html">Car<span>Center</span></a>
+    <p>Servicios Automotrices</p>
+  </div>
+  <div class="footer-links">
+    <a href="catalogo.html">Catálogo</a>
+    <a href="comparador.html">Comparador</a>
+    <a href="contacto.html">Contacto</a>
+  </div>
+  <small>© 2026 CarCenter Panamá.</small>
+</footer>
+<script src="js/main.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/parsleyjs@2.9.2/dist/parsley.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/parsleyjs@2.9.2/dist/i18n/es.js"></script>
+<script src="js/contacto.js"></script>
+</body>
+</html>

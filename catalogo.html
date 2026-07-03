@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CarCenter Panamá: catálogo, comparación y selección de vehículos.">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <title>Catálogo | CarCenter Panamá</title>
+</head>
+<body>
+<header class="public-header">
+  <div class="header-container">
+    <div class="header-left">
+      <a class="public-logo" href="index.html" aria-label="CarCenter, inicio">Car<span>Center</span><small>Servicios Automotrices</small></a>
+    </div>
+
+    <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-navigation">
+      <i class="fa-solid fa-bars" aria-hidden="true"></i>
+    </button>
+
+    <nav class="public-nav main-nav" id="main-navigation" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html" class="activo" aria-current="page">Catálogo</a>
+        <a href="galeria.html">Galería</a>
+        <a href="comparador.html">Comparador</a>
+        <a href="evolucion.html">Tecnología</a>
+        <a href="visita.html">Visítanos</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <div class="header-right">
+      <nav class="social-icons" aria-label="Redes sociales">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Facebook" title="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Instagram" title="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="Abrir LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+      </nav>
+      <a href="garage.html" class="login-link">Mi Garage <span id="garage-count" class="garage-count" aria-label="Vehículos guardados">0</span></a>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Catálogo CarCenter</span>
+      <h1>Todos los modelos, <span>un solo lugar.</span></h1>
+      <p>Busca por marca o modelo, filtra por categoría y guarda en Mi Garage los vehículos que quieres revisar con más calma.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="catalog-controls">
+        <label class="search-box" for="buscador"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i><input id="buscador" type="search" placeholder="Buscar por modelo, marca o categoría" autocomplete="off"></label>
+        <div class="filter-buttons" aria-label="Filtros del catálogo">
+          <button class="filter-button active" type="button" data-filter="todos">Todos</button>
+          <button class="filter-button" type="button" data-filter="suv">SUV</button>
+          <button class="filter-button" type="button" data-filter="sedan">Sedán</button>
+          <button class="filter-button" type="button" data-filter="hibrido">Híbridos</button>
+          <button class="filter-button" type="button" data-filter="compacto">Compactos</button>
+          <button class="filter-button" type="button" data-filter="comercial">Comerciales</button>
+        </div>
+      </div>
+
+      <p id="catalog-count" class="catalog-count" aria-live="polite"></p>
+
+      <div class="auto-grid" id="catalog-grid">
+    <article class="auto-card" data-category="sedan" data-search="honda honda city ex 2024 sedán sedan gasolina automática">
+      <div class="auto-media">
+        <img src="img/autos/honda/honda-city-ex-2024-20260628100308-c50dae.jpg" alt="Honda City EX 2024" loading="lazy" decoding="async">
+      </div>
+      <div class="auto-card-body">
+        <span class="card-tag">Sedán</span>
+        <h3>Honda City EX 2024</h3>
+        <p>Un sedán práctico y cómodo para acompañar la rutina diaria.</p>
+        <ul class="card-specs">
+          <li>1.5 L</li>
+          <li>Automática</li>
+          <li>Gasolina</li>
+        </ul>
+        <div class="card-footer">
+          <span class="price"><small>Desde</small><strong>Consultar</strong></span>
+          <button class="button-small btn-garage" type="button" data-id="city" data-name="Honda City EX 2024" data-brand="Honda" data-image="img/autos/honda/honda-city-ex-2024-20260628100308-c50dae.jpg"><i class="fa-solid fa-plus" aria-hidden="true"></i> Mi Garage</button>
+        </div>
+      </div>
+    </article>
+    <article class="auto-card" data-category="sedan deportivo" data-search="honda honda civic type r sedán deportivo sedan deportivo gasolina manual">
+      <div class="auto-media">
+        <img src="img/autos/honda/honda-civic-type-r-2015-20260628100654-e6452d.jpg" alt="Honda Civic Type R" loading="lazy" decoding="async">
+      </div>
+      <div class="auto-card-body">
+        <span class="card-tag">Sedán deportivo</span>
+        <h3>Honda Civic Type R</h3>
+        <p>Diseño deportivo y una personalidad pensada para quienes disfrutan conducir.</p>
+        <ul class="card-specs">
+          <li>2.0 L Turbo</li>
+          <li>Manual</li>
+          <li>Gasolina</li>
+        </ul>
+        <div class="card-footer">
+          <span class="price"><small>Desde</small><strong>Consultar</strong></span>
+          <button class="button-small btn-garage" type="button" data-id="civic-type-r" data-name="Honda Civic Type R" data-brand="Honda" data-image="img/autos/honda/honda-civic-type-r-2015-20260628100654-e6452d.jpg"><i class="fa-solid fa-plus" aria-hidden="true"></i> Mi Garage</button>
+        </div>
+      </div>
+    </article>
+    <article class="auto-card" data-category="suv hibrido" data-search="honda honda cr-v ex-l hybrid suv híbrida suv hibrido híbrido automática">
+      <div class="auto-media">
+        <img src="img/autos/honda/honda-cr-v-ex-l-hybrid-2024-20260628104145-9452ee.jpg" alt="Honda CR-V EX-L Hybrid" loading="lazy" decoding="async">
+      </div>
+      <div class="auto-card-body">
+        <span class="card-tag">SUV híbrida</span>
+        <h3>Honda CR-V EX-L Hybrid</h3>
+        <p>Confort y eficiencia para acompañar la rutina y las escapadas.</p>
+        <ul class="card-specs">
+          <li>2.0 L híbrido</li>
+          <li>Automática</li>
+          <li>Híbrido</li>
+        </ul>
+        <div class="card-footer">
+          <span class="price"><small>Desde</small><strong>B/. 30,995</strong></span>
+          <button class="button-small btn-garage" type="button" data-id="crv" data-name="Honda CR-V EX-L Hybrid" data-brand="Honda" data-image="img/autos/honda/honda-cr-v-ex-l-hybrid-2024-20260628104145-9452ee.jpg"><i class="fa-solid fa-plus" aria-hidden="true"></i> Mi Garage</button>
+        </div>
+      </div>
+    </article>
+    <article class="auto-card" data-category="suv" data-search="honda honda br-v 2026 suv familiar suv gasolina automática">
+      <div class="auto-media">
+        <img src="img/autos/honda/honda-honda-br-v-2026-20260628101040-060cc0.jpg" alt="Honda BR-V 2026" loading="lazy" decoding="async">
+      </div>
+      <div class="auto-card-body">
+        <span class="card-tag">SUV familiar</span>
+        <h3>Honda BR-V 2026</h3>
+        <p>Espacio y versatilidad para moverse con tranquilidad en familia.</p>
+        <ul class="card-specs">
+          <li>1.5 L</li>
+          <li>Automática</li>
+          <li>Gasolina</li>
+        </ul>
+        <div class="card-footer">
+          <span class="price"><small>Desde</small><strong>Consultar</strong></span>
+          <button class="button-small btn-garage" type="button" data-id="brv" data-name="Honda BR-V 2026" data-brand="Honda" data-image="img/autos/honda/honda-honda-br-v-2026-20260628101040-060cc0.jpg"><i class="fa-solid fa-plus" aria-hidden="true"></i> Mi Garage</button>
+        </div>
+      </div>
+    </article>
+    <article class="auto-card" data-category="suv" data-search="honda honda pilot lx 2026 suv familiar suv gasolina automática">
+      <div class="auto-media">
+        <img src="img/autos/honda/honda-pilot-lx-2026-20260628103600-09a82c.jpg" alt="Honda Pilot LX 2026" loading="lazy" decoding="async">
+      </div>
+      <div class="auto-card-body">
+        <span class="card-tag">SUV familiar</span>
+        <h3>Honda Pilot LX 2026</h3>
+        <p>Amplitud y potencia para familias que disfrutan viajar juntas.</p>
+        <ul class="card-specs">
+          <li>3.5 L V6</li>
+          <li>Automática</li>
+          <li>Gasolina</li>
+        </ul>
+        <div class="card-footer">
+          <span class="price"><small>Desde</small><strong>B/. 57,490</strong></span>
+          <button class="button-small btn-garage" type="button" data-id="pilot" data-name="Honda Pilot LX 2026" data-brand="Honda" data-image="img/autos/honda/honda-pilot-lx-2026-20260628103600-09a82c.jpg"><i class="fa-solid fa-plus" aria-hidden="true"></i> Mi Garage</button>
+        </div>
+      </div>
+    </article>
+    <article class="auto-card" data-category="suv" data-search="honda honda hr-v 2026 suv compacta suv gasolina automática">
+      <div class="auto-media">
+        <img src="img/autos/honda/hr-v2026.png" alt="Honda HR-V 2026" loading="lazy" decoding="async">
+      </div>
+      <div class="auto-card-body">
+        <span class="card-tag">SUV compacta</span>
+        <h3>Honda HR-V 2026</h3>
+        <p>Una SUV compacta para quienes valoran diseño, altura y practicidad.</p>
+        <ul class="card-specs">
+          <li>1.5 L</li>
+          <li>Automática</li>
+          <li>Gasolina</li>
+        </ul>
+        <div class="card-footer">
+          <span class="price"><small>Desde</small><strong>Consultar</strong></span>
+          <button class="button-small btn-garage" type="button" data-id="hrv" data-name="Honda HR-V 2026" data-brand="Honda" data-image="img/autos/honda/hr-v2026.png"><i class="fa-solid fa-plus" aria-hidden="true"></i> Mi Garage</button>
+        </div>
+      </div>
+    </article>
+    <article class="auto-card" data-category="compacto" data-search="hyundai hyundai grand i10 compacto compacto gasolina manual / automática">
+      <div class="auto-media">
+        <img src="img/autos/hyundai/auto_1782618823.png" alt="Hyundai Grand i10" loading="lazy" decoding="async">
+      </div>
+      <div class="auto-card-body">
+        <span class="card-tag">Compacto</span>
+        <h3>Hyundai Grand i10</h3>
+        <p>Tamaño ágil y eficiente para hacer más simple cada recorrido urbano.</p>
+        <ul class="card-specs">
+          <li>1.2 L</li>
+          <li>Manual / automática</li>
+          <li>Gasolina</li>
+        </ul>
+        <div class="card-footer">
+          <span class="price"><small>Desde</small><strong>Consultar</strong></span>
+          <button class="button-small btn-garage" type="button" data-id="grand-i10" data-name="Hyundai Grand i10" data-brand="Hyundai" data-image="img/autos/hyundai/auto_1782618823.png"><i class="fa-solid fa-plus" aria-hidden="true"></i> Mi Garage</button>
+        </div>
+      </div>
+    </article>
+    <article class="auto-card" data-category="sedan" data-search="hyundai hyundai accent sedán sedan gasolina automática">
+      <div class="auto-media">
+        <img src="img/autos/hyundai/auto_1782619547.png" alt="Hyundai Accent" loading="lazy" decoding="async">
+      </div>
+      <div class="auto-card-body">
+        <span class="card-tag">Sedán</span>
+        <h3>Hyundai Accent</h3>
+        <p>Un sedán equilibrado con espacio, diseño y comodidad cotidiana.</p>
+        <ul class="card-specs">
+          <li>1.6 L</li>
+          <li>Automática</li>
+          <li>Gasolina</li>
+        </ul>
+        <div class="card-footer">
+          <span class="price"><small>Desde</small><strong>Consultar</strong></span>
+          <button class="button-small btn-garage" type="button" data-id="accent" data-name="Hyundai Accent" data-brand="Hyundai" data-image="img/autos/hyundai/auto_1782619547.png"><i class="fa-solid fa-plus" aria-hidden="true"></i> Mi Garage</button>
+        </div>
+      </div>
+    </article>
+    <article class="auto-card" data-category="suv" data-search="hyundai hyundai creta 2026 suv suv gasolina automática">
+      <div class="auto-media">
+        <img src="img/autos/hyundai/auto_1782620206.png" alt="Hyundai Creta 2026" loading="lazy" decoding="async">
+      </div>
+      <div class="auto-card-body">
+        <span class="card-tag">SUV</span>
+        <h3>Hyundai Creta 2026</h3>
+        <p>Una SUV urbana con estilo y una posición de manejo elevada.</p>
+        <ul class="card-specs">
+          <li>1.5 L</li>
+          <li>Automática</li>
+          <li>Gasolina</li>
+        </ul>
+        <div class="card-footer">
+          <span class="price"><small>Desde</small><strong>Consultar</strong></span>
+          <button class="button-small btn-garage" type="button" data-id="creta" data-name="Hyundai Creta 2026" data-brand="Hyundai" data-image="img/autos/hyundai/auto_1782620206.png"><i class="fa-solid fa-plus" aria-hidden="true"></i> Mi Garage</button>
+        </div>
+      </div>
+    </article>
+    <article class="auto-card" data-category="suv" data-search="hyundai hyundai creta grand 2026 suv familiar suv gasolina automática">
+      <div class="auto-media">
+        <img src="img/autos/hyundai/hyundai-creta-grand-2026-20260628075856-07bbe2.png" alt="Hyundai Creta Grand 2026" loading="lazy" decoding="async">
+      </div>
+      <div class="auto-card-body">
+        <span class="card-tag">SUV familiar</span>
+        <h3>Hyundai Creta Grand 2026</h3>
+        <p>Más espacio para acompañar viajes, planes y días en familia.</p>
+        <ul class="card-specs">
+          <li>1.5 L</li>
+          <li>Automática</li>
+          <li>Gasolina</li>
+        </ul>
+        <div class="card-footer">
+          <span class="price"><small>Desde</small><strong>Consultar</strong></span>
+          <button class="button-small btn-garage" type="button" data-id="creta-grand" data-name="Hyundai Creta Grand 2026" data-brand="Hyundai" data-image="img/autos/hyundai/hyundai-creta-grand-2026-20260628075856-07bbe2.png"><i class="fa-solid fa-plus" aria-hidden="true"></i> Mi Garage</button>
+        </div>
+      </div>
+    </article>
+    <article class="auto-card" data-category="suv" data-search="hyundai hyundai kona 2026 suv suv consultar automática">
+      <div class="auto-media">
+        <img src="img/autos/hyundai/hyundai-kona-2026-20260628080547-bbb603.png" alt="Hyundai Kona 2026" loading="lazy" decoding="async">
+      </div>
+      <div class="auto-card-body">
+        <span class="card-tag">SUV</span>
+        <h3>Hyundai Kona 2026</h3>
+        <p>Diseño moderno, líneas marcadas y una presencia distinta en la ciudad.</p>
+        <ul class="card-specs">
+          <li>Consultar versión</li>
+          <li>Automática</li>
+          <li>Consultar</li>
+        </ul>
+        <div class="card-footer">
+          <span class="price"><small>Desde</small><strong>Consultar</strong></span>
+          <button class="button-small btn-garage" type="button" data-id="kona" data-name="Hyundai Kona 2026" data-brand="Hyundai" data-image="img/autos/hyundai/hyundai-kona-2026-20260628080547-bbb603.png"><i class="fa-solid fa-plus" aria-hidden="true"></i> Mi Garage</button>
+        </div>
+      </div>
+    </article>
+    <article class="auto-card" data-category="suv" data-search="hyundai hyundai venue 2026 suv compacta suv gasolina manual">
+      <div class="auto-media">
+        <img src="img/autos/hyundai/hyundai-venue-2026-20260628081007-fa7561.png" alt="Hyundai Venue 2026" loading="lazy" decoding="async">
+      </div>
+      <div class="auto-card-body">
+        <span class="card-tag">SUV compacta</span>
+        <h3>Hyundai Venue 2026</h3>
+        <p>Una SUV ágil con presencia contemporánea para la movilidad urbana.</p>
+        <ul class="card-specs">
+          <li>1.0 L Turbo</li>
+          <li>Manual</li>
+          <li>Gasolina</li>
+        </ul>
+        <div class="card-footer">
+          <span class="price"><small>Desde</small><strong>B/. 16,541</strong></span>
+          <button class="button-small btn-garage" type="button" data-id="venue" data-name="Hyundai Venue 2026" data-brand="Hyundai" data-image="img/autos/hyundai/hyundai-venue-2026-20260628081007-fa7561.png"><i class="fa-solid fa-plus" aria-hidden="true"></i> Mi Garage</button>
+        </div>
+      </div>
+    </article>
+    <article class="auto-card" data-category="sedan" data-search="kia kia k3 sedán 2024 sedán sedan gasolina automática">
+      <div class="auto-media">
+        <img src="img/autos/kia/kia-k3-sed-an-2024-20260628085018-a5c899.webp" alt="Kia K3 Sedán 2024" loading="lazy" decoding="async">
+      </div>
+      <div class="auto-card-body">
+        <span class="card-tag">Sedán</span>
+        <h3>Kia K3 Sedán 2024</h3>
+        <p>Estilo refinado y comodidad para acompañar tu rutina.</p>
+        <ul class="card-specs">
+          <li>1.4 L</li>
+          <li>Automática</li>
+          <li>Gasolina</li>
+        </ul>
+        <div class="card-footer">
+          <span class="price"><small>Desde</small><strong>B/. 17,995</strong></span>
+          <button class="button-small btn-garage" type="button" data-id="k3" data-name="Kia K3 Sedán 2024" data-brand="Kia" data-image="img/autos/kia/kia-k3-sed-an-2024-20260628085018-a5c899.webp"><i class="fa-solid fa-plus" aria-hidden="true"></i> Mi Garage</button>
+        </div>
+      </div>
+    </article>
+    <article class="auto-card" data-category="compacto" data-search="kia kia picanto 2024 compacto compacto gasolina manual / automática">
+      <div class="auto-media">
+        <img src="img/autos/kia/kia-picanto-2024-20260628083245-d324be.webp" alt="Kia Picanto 2024" loading="lazy" decoding="async">
+      </div>
+      <div class="auto-card-body">
+        <span class="card-tag">Compacto</span>
+        <h3>Kia Picanto 2024</h3>
+        <p>Un formato compacto pensado para moverse con facilidad por la ciudad.</p>
+        <ul class="card-specs">
+          <li>1.2 L</li>
+          <li>Manual / automática</li>
+          <li>Gasolina</li>
+        </ul>
+        <div class="card-footer">
+          <span class="price"><small>Desde</small><strong>Consultar</strong></span>
+          <button class="button-small btn-garage" type="button" data-id="picanto" data-name="Kia Picanto 2024" data-brand="Kia" data-image="img/autos/kia/kia-picanto-2024-20260628083245-d324be.webp"><i class="fa-solid fa-plus" aria-hidden="true"></i> Mi Garage</button>
+        </div>
+      </div>
+    </article>
+    <article class="auto-card" data-category="sedan" data-search="kia kia soluto 2024 sedán sedan gasolina automática">
+      <div class="auto-media">
+        <img src="img/autos/kia/kia-soluto-2024-20260628084530-a84eb5.png" alt="Kia Soluto 2024" loading="lazy" decoding="async">
+      </div>
+      <div class="auto-card-body">
+        <span class="card-tag">Sedán</span>
+        <h3>Kia Soluto 2024</h3>
+        <p>Un sedán funcional con una propuesta clara para el día a día.</p>
+        <ul class="card-specs">
+          <li>1.4 L</li>
+          <li>Automática</li>
+          <li>Gasolina</li>
+        </ul>
+        <div class="card-footer">
+          <span class="price"><small>Desde</small><strong>Consultar</strong></span>
+          <button class="button-small btn-garage" type="button" data-id="soluto" data-name="Kia Soluto 2024" data-brand="Kia" data-image="img/autos/kia/kia-soluto-2024-20260628084530-a84eb5.png"><i class="fa-solid fa-plus" aria-hidden="true"></i> Mi Garage</button>
+        </div>
+      </div>
+    </article>
+    <article class="auto-card" data-category="suv" data-search="kia kia sonet 2024 suv compacta suv gasolina automática">
+      <div class="auto-media">
+        <img src="img/autos/kia/kia-sonet-2024-20260628121609-959b50.png" alt="Kia Sonet 2024" loading="lazy" decoding="async">
+      </div>
+      <div class="auto-card-body">
+        <span class="card-tag">SUV compacta</span>
+        <h3>Kia Sonet 2024</h3>
+        <p>Tamaño práctico, altura y diseño para recorridos urbanos.</p>
+        <ul class="card-specs">
+          <li>1.5 L</li>
+          <li>Automática</li>
+          <li>Gasolina</li>
+        </ul>
+        <div class="card-footer">
+          <span class="price"><small>Desde</small><strong>Consultar</strong></span>
+          <button class="button-small btn-garage" type="button" data-id="sonet" data-name="Kia Sonet 2024" data-brand="Kia" data-image="img/autos/kia/kia-sonet-2024-20260628121609-959b50.png"><i class="fa-solid fa-plus" aria-hidden="true"></i> Mi Garage</button>
+        </div>
+      </div>
+    </article>
+    <article class="auto-card sportage" data-category="suv" data-search="kia kia sportage 2026 suv suv gasolina automática">
+      <div class="auto-media">
+        <img src="img/autos/kia/kia-sportage-2026-20260628085603-379a88.jpg" alt="Kia Sportage 2026" loading="lazy" decoding="async">
+      </div>
+      <div class="auto-card-body">
+        <span class="card-tag">SUV</span>
+        <h3>Kia Sportage 2026</h3>
+        <p>Diseño llamativo, espacio interior y comodidad para cada ruta.</p>
+        <ul class="card-specs">
+          <li>2.0 L</li>
+          <li>Automática</li>
+          <li>Gasolina</li>
+        </ul>
+        <div class="card-footer">
+          <span class="price"><small>Desde</small><strong>B/. 28,560</strong></span>
+          <button class="button-small btn-garage" type="button" data-id="sportage" data-name="Kia Sportage 2026" data-brand="Kia" data-image="img/autos/kia/kia-sportage-2026-20260628085603-379a88.jpg"><i class="fa-solid fa-plus" aria-hidden="true"></i> Mi Garage</button>
+        </div>
+      </div>
+    </article>
+    <article class="auto-card" data-category="suv" data-search="nissan nissan x-trail 2025 suv familiar suv gasolina automática">
+      <div class="auto-media">
+        <img src="img/autos/nissan/nissan-x-trail.webp" alt="Nissan X-Trail 2025" loading="lazy" decoding="async">
+      </div>
+      <div class="auto-card-body">
+        <span class="card-tag">SUV familiar</span>
+        <h3>Nissan X-Trail 2025</h3>
+        <p>Versatilidad, espacio y una presencia ideal para salir de la rutina.</p>
+        <ul class="card-specs">
+          <li>2.5 L</li>
+          <li>Automática</li>
+          <li>Gasolina</li>
+        </ul>
+        <div class="card-footer">
+          <span class="price"><small>Desde</small><strong>B/. 27,000</strong></span>
+          <button class="button-small btn-garage" type="button" data-id="xtrail" data-name="Nissan X-Trail 2025" data-brand="Nissan" data-image="img/autos/nissan/nissan-x-trail.webp"><i class="fa-solid fa-plus" aria-hidden="true"></i> Mi Garage</button>
+        </div>
+      </div>
+    </article>
+    <article class="auto-card" data-category="suv" data-search="nissan nissan kait sense cvt 2026 suv compacta suv gasolina cvt">
+      <div class="auto-media">
+        <img src="img/autos/nissan/nissan-kait-sense-cvt-2026-20260628092845-d2009f.png" alt="Nissan Kait Sense CVT 2026" loading="lazy" decoding="async">
+      </div>
+      <div class="auto-card-body">
+        <span class="card-tag">SUV compacta</span>
+        <h3>Nissan Kait Sense CVT 2026</h3>
+        <p>Una SUV compacta para una conducción conectada y práctica.</p>
+        <ul class="card-specs">
+          <li>Consultar versión</li>
+          <li>CVT</li>
+          <li>Gasolina</li>
+        </ul>
+        <div class="card-footer">
+          <span class="price"><small>Desde</small><strong>Consultar</strong></span>
+          <button class="button-small btn-garage" type="button" data-id="kait" data-name="Nissan Kait Sense CVT 2026" data-brand="Nissan" data-image="img/autos/nissan/nissan-kait-sense-cvt-2026-20260628092845-d2009f.png"><i class="fa-solid fa-plus" aria-hidden="true"></i> Mi Garage</button>
+        </div>
+      </div>
+    </article>
+    <article class="auto-card" data-category="suv" data-search="nissan nissan kicks exclusive 2026 suv suv gasolina automática cvt">
+      <div class="auto-media">
+        <img src="img/autos/nissan/nissan-kicks-exclusive-cvt-2026-20260628091905-918281.png" alt="Nissan Kicks Exclusive 2026" loading="lazy" decoding="async">
+      </div>
+      <div class="auto-card-body">
+        <span class="card-tag">SUV</span>
+        <h3>Nissan Kicks Exclusive 2026</h3>
+        <p>Diseño moderno, conectividad y una experiencia más completa.</p>
+        <ul class="card-specs">
+          <li>2.0 L</li>
+          <li>Automática CVT</li>
+          <li>Gasolina</li>
+        </ul>
+        <div class="card-footer">
+          <span class="price"><small>Desde</small><strong>B/. 30,600</strong></span>
+          <button class="button-small btn-garage" type="button" data-id="kicks-exclusive" data-name="Nissan Kicks Exclusive 2026" data-brand="Nissan" data-image="img/autos/nissan/nissan-kicks-exclusive-cvt-2026-20260628091905-918281.png"><i class="fa-solid fa-plus" aria-hidden="true"></i> Mi Garage</button>
+        </div>
+      </div>
+    </article>
+    <article class="auto-card" data-category="suv" data-search="nissan nissan magnite advance cvt 2025 suv compacta suv gasolina cvt">
+      <div class="auto-media">
+        <img src="img/autos/nissan/nissan-magnite-advance-cvt-2025-20260628092359-fa79c2.png" alt="Nissan Magnite Advance CVT 2025" loading="lazy" decoding="async">
+      </div>
+      <div class="auto-card-body">
+        <span class="card-tag">SUV compacta</span>
+        <h3>Nissan Magnite Advance CVT 2025</h3>
+        <p>Una SUV compacta con personalidad y enfoque urbano.</p>
+        <ul class="card-specs">
+          <li>1.0 L Turbo</li>
+          <li>CVT</li>
+          <li>Gasolina</li>
+        </ul>
+        <div class="card-footer">
+          <span class="price"><small>Desde</small><strong>Consultar</strong></span>
+          <button class="button-small btn-garage" type="button" data-id="magnite" data-name="Nissan Magnite Advance CVT 2025" data-brand="Nissan" data-image="img/autos/nissan/nissan-magnite-advance-cvt-2025-20260628092359-fa79c2.png"><i class="fa-solid fa-plus" aria-hidden="true"></i> Mi Garage</button>
+        </div>
+      </div>
+    </article>
+    <article class="auto-card" data-category="suv" data-search="nissan nissan kicks sense cvt 2026 suv suv gasolina cvt">
+      <div class="auto-media">
+        <img src="img/autos/nissan/nissan-nissan-kicks-sense-cvt-2026-20260628090748-427f73.png" alt="Nissan Kicks Sense CVT 2026" loading="lazy" decoding="async">
+      </div>
+      <div class="auto-card-body">
+        <span class="card-tag">SUV</span>
+        <h3>Nissan Kicks Sense CVT 2026</h3>
+        <p>Espacio, confort y detalles pensados para el ritmo de todos los días.</p>
+        <ul class="card-specs">
+          <li>2.0 L</li>
+          <li>CVT</li>
+          <li>Gasolina</li>
+        </ul>
+        <div class="card-footer">
+          <span class="price"><small>Desde</small><strong>Consultar</strong></span>
+          <button class="button-small btn-garage" type="button" data-id="kicks-sense" data-name="Nissan Kicks Sense CVT 2026" data-brand="Nissan" data-image="img/autos/nissan/nissan-nissan-kicks-sense-cvt-2026-20260628090748-427f73.png"><i class="fa-solid fa-plus" aria-hidden="true"></i> Mi Garage</button>
+        </div>
+      </div>
+    </article>
+    <article class="auto-card" data-category="suv" data-search="nissan nissan pathfinder advance 2026 suv familiar suv gasolina automática">
+      <div class="auto-media">
+        <img src="img/autos/nissan/nissan-pathfinder-advance-2026-20260628093451-b15fd0.jpg" alt="Nissan Pathfinder Advance 2026" loading="lazy" decoding="async">
+      </div>
+      <div class="auto-card-body">
+        <span class="card-tag">SUV familiar</span>
+        <h3>Nissan Pathfinder Advance 2026</h3>
+        <p>Una SUV amplia para compartir cada trayecto con más comodidad.</p>
+        <ul class="card-specs">
+          <li>Consultar versión</li>
+          <li>Automática</li>
+          <li>Gasolina</li>
+        </ul>
+        <div class="card-footer">
+          <span class="price"><small>Desde</small><strong>Consultar</strong></span>
+          <button class="button-small btn-garage" type="button" data-id="pathfinder" data-name="Nissan Pathfinder Advance 2026" data-brand="Nissan" data-image="img/autos/nissan/nissan-pathfinder-advance-2026-20260628093451-b15fd0.jpg"><i class="fa-solid fa-plus" aria-hidden="true"></i> Mi Garage</button>
+        </div>
+      </div>
+    </article>
+    <article class="auto-card" data-category="comercial" data-search="toyota toyota innova movilidad familiar comercial gasolina automática">
+      <div class="auto-media">
+        <img src="img/autos/toyota/auto_1781641819.png" alt="Toyota Innova" loading="lazy" decoding="async">
+      </div>
+      <div class="auto-card-body">
+        <span class="card-tag">Movilidad familiar</span>
+        <h3>Toyota Innova</h3>
+        <p>Espacio y practicidad para quienes necesitan una solución versátil.</p>
+        <ul class="card-specs">
+          <li>Consultar versión</li>
+          <li>Automática</li>
+          <li>Gasolina</li>
+        </ul>
+        <div class="card-footer">
+          <span class="price"><small>Desde</small><strong>Consultar</strong></span>
+          <button class="button-small btn-garage" type="button" data-id="innova" data-name="Toyota Innova" data-brand="Toyota" data-image="img/autos/toyota/auto_1781641819.png"><i class="fa-solid fa-plus" aria-hidden="true"></i> Mi Garage</button>
+        </div>
+      </div>
+    </article>
+    <article class="auto-card" data-category="sedan" data-search="toyota toyota yaris sedán sedan gasolina automática">
+      <div class="auto-media">
+        <img src="img/autos/toyota/auto_1781642314.jpg" alt="Toyota Yaris" loading="lazy" decoding="async">
+      </div>
+      <div class="auto-card-body">
+        <span class="card-tag">Sedán</span>
+        <h3>Toyota Yaris</h3>
+        <p>Un sedán compacto con una propuesta equilibrada para la ciudad.</p>
+        <ul class="card-specs">
+          <li>1.5 L</li>
+          <li>Automática</li>
+          <li>Gasolina</li>
+        </ul>
+        <div class="card-footer">
+          <span class="price"><small>Desde</small><strong>Consultar</strong></span>
+          <button class="button-small btn-garage" type="button" data-id="yaris" data-name="Toyota Yaris" data-brand="Toyota" data-image="img/autos/toyota/auto_1781642314.jpg"><i class="fa-solid fa-plus" aria-hidden="true"></i> Mi Garage</button>
+        </div>
+      </div>
+    </article>
+    <article class="auto-card" data-category="compacto" data-search="toyota toyota agya compacto compacto gasolina manual / automática">
+      <div class="auto-media">
+        <img src="img/autos/toyota/auto_1781992125.png" alt="Toyota Agya" loading="lazy" decoding="async">
+      </div>
+      <div class="auto-card-body">
+        <span class="card-tag">Compacto</span>
+        <h3>Toyota Agya</h3>
+        <p>Un formato pequeño y ágil para desplazarse con facilidad.</p>
+        <ul class="card-specs">
+          <li>1.0 L</li>
+          <li>Manual / automática</li>
+          <li>Gasolina</li>
+        </ul>
+        <div class="card-footer">
+          <span class="price"><small>Desde</small><strong>Consultar</strong></span>
+          <button class="button-small btn-garage" type="button" data-id="agya" data-name="Toyota Agya" data-brand="Toyota" data-image="img/autos/toyota/auto_1781992125.png"><i class="fa-solid fa-plus" aria-hidden="true"></i> Mi Garage</button>
+        </div>
+      </div>
+    </article>
+    <article class="auto-card" data-category="comercial" data-search="toyota toyota hilux gr sport pickup comercial diésel / gasolina automática">
+      <div class="auto-media">
+        <img src="img/autos/toyota/auto_1781992580.webp" alt="Toyota Hilux GR Sport" loading="lazy" decoding="async">
+      </div>
+      <div class="auto-card-body">
+        <span class="card-tag">Pickup</span>
+        <h3>Toyota Hilux GR Sport</h3>
+        <p>Una pickup con presencia robusta para trabajo, carga y aventura.</p>
+        <ul class="card-specs">
+          <li>Consultar versión</li>
+          <li>Automática</li>
+          <li>Diésel / gasolina</li>
+        </ul>
+        <div class="card-footer">
+          <span class="price"><small>Desde</small><strong>Consultar</strong></span>
+          <button class="button-small btn-garage" type="button" data-id="hilux-gr" data-name="Toyota Hilux GR Sport" data-brand="Toyota" data-image="img/autos/toyota/auto_1781992580.webp"><i class="fa-solid fa-plus" aria-hidden="true"></i> Mi Garage</button>
+        </div>
+      </div>
+    </article>
+    <article class="auto-card" data-category="suv" data-search="toyota toyota land cruiser prado todo terreno suv consultar automática">
+      <div class="auto-media">
+        <img src="img/autos/toyota/auto_1781993088.png" alt="Toyota Land Cruiser Prado" loading="lazy" decoding="async">
+      </div>
+      <div class="auto-card-body">
+        <span class="card-tag">Todo terreno</span>
+        <h3>Toyota Land Cruiser Prado</h3>
+        <p>Capacidad y presencia para rutas que exigen más confianza.</p>
+        <ul class="card-specs">
+          <li>Consultar versión</li>
+          <li>Automática</li>
+          <li>Consultar</li>
+        </ul>
+        <div class="card-footer">
+          <span class="price"><small>Desde</small><strong>Consultar</strong></span>
+          <button class="button-small btn-garage" type="button" data-id="prado" data-name="Toyota Land Cruiser Prado" data-brand="Toyota" data-image="img/autos/toyota/auto_1781993088.png"><i class="fa-solid fa-plus" aria-hidden="true"></i> Mi Garage</button>
+        </div>
+      </div>
+    </article>
+    <article class="auto-card" data-category="suv" data-search="toyota toyota raize 2026 suv compacta suv gasolina automática">
+      <div class="auto-media">
+        <img src="img/autos/toyota/auto_1781996830.jpg" alt="Toyota Raize 2026" loading="lazy" decoding="async">
+      </div>
+      <div class="auto-card-body">
+        <span class="card-tag">SUV compacta</span>
+        <h3>Toyota Raize 2026</h3>
+        <p>Altura, practicidad y tamaño ideal para el ritmo de la ciudad.</p>
+        <ul class="card-specs">
+          <li>1.2 L</li>
+          <li>Automática</li>
+          <li>Gasolina</li>
+        </ul>
+        <div class="card-footer">
+          <span class="price"><small>Desde</small><strong>B/. 17,600</strong></span>
+          <button class="button-small btn-garage" type="button" data-id="raize" data-name="Toyota Raize 2026" data-brand="Toyota" data-image="img/autos/toyota/auto_1781996830.jpg"><i class="fa-solid fa-plus" aria-hidden="true"></i> Mi Garage</button>
+        </div>
+      </div>
+    </article>
+    <article class="auto-card" data-category="suv" data-search="toyota toyota yaris cross suv compacta suv consultar automática">
+      <div class="auto-media">
+        <img src="img/autos/toyota/auto_1781997123.jpg" alt="Toyota Yaris Cross" loading="lazy" decoding="async">
+      </div>
+      <div class="auto-card-body">
+        <span class="card-tag">SUV compacta</span>
+        <h3>Toyota Yaris Cross</h3>
+        <p>Una SUV compacta que mezcla practicidad, diseño y versatilidad.</p>
+        <ul class="card-specs">
+          <li>Consultar versión</li>
+          <li>Automática</li>
+          <li>Consultar</li>
+        </ul>
+        <div class="card-footer">
+          <span class="price"><small>Desde</small><strong>Consultar</strong></span>
+          <button class="button-small btn-garage" type="button" data-id="yaris-cross" data-name="Toyota Yaris Cross" data-brand="Toyota" data-image="img/autos/toyota/auto_1781997123.jpg"><i class="fa-solid fa-plus" aria-hidden="true"></i> Mi Garage</button>
+        </div>
+      </div>
+    </article>
+    <article class="auto-card" data-category="comercial" data-search="toyota toyota coaster comercial comercial diésel manual / automática">
+      <div class="auto-media">
+        <img src="img/autos/toyota/auto_1781997977.jpeg" alt="Toyota Coaster" loading="lazy" decoding="async">
+      </div>
+      <div class="auto-card-body">
+        <span class="card-tag">Comercial</span>
+        <h3>Toyota Coaster</h3>
+        <p>Capacidad para trasladar grupos con una solución de movilidad amplia.</p>
+        <ul class="card-specs">
+          <li>Consultar versión</li>
+          <li>Manual / automática</li>
+          <li>Diésel</li>
+        </ul>
+        <div class="card-footer">
+          <span class="price"><small>Desde</small><strong>Consultar</strong></span>
+          <button class="button-small btn-garage" type="button" data-id="coaster" data-name="Toyota Coaster" data-brand="Toyota" data-image="img/autos/toyota/auto_1781997977.jpeg"><i class="fa-solid fa-plus" aria-hidden="true"></i> Mi Garage</button>
+        </div>
+      </div>
+    </article>
+    <article class="auto-card" data-category="comercial" data-search="toyota toyota hilux pickup comercial diésel / gasolina manual / automática">
+      <div class="auto-media">
+        <img src="img/autos/toyota/auto_1781998642.webp" alt="Toyota Hilux" loading="lazy" decoding="async">
+      </div>
+      <div class="auto-card-body">
+        <span class="card-tag">Pickup</span>
+        <h3>Toyota Hilux</h3>
+        <p>Una pickup preparada para combinar trabajo y recorridos exigentes.</p>
+        <ul class="card-specs">
+          <li>Consultar versión</li>
+          <li>Manual / automática</li>
+          <li>Diésel / gasolina</li>
+        </ul>
+        <div class="card-footer">
+          <span class="price"><small>Desde</small><strong>Consultar</strong></span>
+          <button class="button-small btn-garage" type="button" data-id="hilux" data-name="Toyota Hilux" data-brand="Toyota" data-image="img/autos/toyota/auto_1781998642.webp"><i class="fa-solid fa-plus" aria-hidden="true"></i> Mi Garage</button>
+        </div>
+      </div>
+    </article>
+    <article class="auto-card" data-category="sedan" data-search="toyota toyota corolla 2026 sedán sedan gasolina automática">
+      <div class="auto-media">
+        <img src="img/autos/toyota/toyota-corolla-2026-20260628073519-78bd60.jpg" alt="Toyota Corolla 2026" loading="lazy" decoding="async">
+      </div>
+      <div class="auto-card-body">
+        <span class="card-tag">Sedán</span>
+        <h3>Toyota Corolla 2026</h3>
+        <p>Un sedán cómodo y elegante para moverse con seguridad en cada día.</p>
+        <ul class="card-specs">
+          <li>1.8 L</li>
+          <li>Automática</li>
+          <li>Gasolina</li>
+        </ul>
+        <div class="card-footer">
+          <span class="price"><small>Desde</small><strong>B/. 23,000</strong></span>
+          <button class="button-small btn-garage" type="button" data-id="corolla" data-name="Toyota Corolla 2026" data-brand="Toyota" data-image="img/autos/toyota/toyota-corolla-2026-20260628073519-78bd60.jpg"><i class="fa-solid fa-plus" aria-hidden="true"></i> Mi Garage</button>
+        </div>
+      </div>
+    </article>
+      </div>
+
+      <div id="empty-message" class="empty-message" role="status" hidden><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i> No encontramos modelos con ese criterio.</div>
+    </div>
+  </section>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</main>
+<footer class="site-footer">
+  <div>
+    <a class="footer-brand" href="index.html">Car<span>Center</span></a>
+    <p>Servicios Automotrices</p>
+  </div>
+  <div class="footer-links">
+    <a href="catalogo.html">Catálogo</a>
+    <a href="comparador.html">Comparador</a>
+    <a href="contacto.html">Contacto</a>
+  </div>
+  <small>© 2026 CarCenter Panamá.</small>
+</footer>
+<script src="js/main.js"></script>
+<script src="js/catalogo.js"></script>
+</body>
+</html>

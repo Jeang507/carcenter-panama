@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CarCenter Panamá: catálogo, comparación y selección de vehículos.">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <title>Comparador | CarCenter Panamá</title>
+</head>
+<body>
+<header class="public-header">
+  <div class="header-container">
+    <div class="header-left">
+      <a class="public-logo" href="index.html" aria-label="CarCenter, inicio">Car<span>Center</span><small>Servicios Automotrices</small></a>
+    </div>
+
+    <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-navigation">
+      <i class="fa-solid fa-bars" aria-hidden="true"></i>
+    </button>
+
+    <nav class="public-nav main-nav" id="main-navigation" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="galeria.html">Galería</a>
+        <a href="comparador.html" class="activo" aria-current="page">Comparador</a>
+        <a href="evolucion.html">Tecnología</a>
+        <a href="visita.html">Visítanos</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <div class="header-right">
+      <nav class="social-icons" aria-label="Redes sociales">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Facebook" title="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Instagram" title="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="Abrir LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+      </nav>
+      <a href="garage.html" class="login-link">Mi Garage <span id="garage-count" class="garage-count" aria-label="Vehículos guardados">0</span></a>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Comparador</span>
+      <h1>Decide con toda la <span>información.</span></h1>
+      <p>Selecciona dos vehículos y revisa sus características principales lado a lado antes de dar el siguiente paso.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="comparator-panel">
+        <div class="form-field">
+          <label for="auto-a">Primer modelo</label>
+          <select id="auto-a">
+          <option value="city">Honda City EX 2024</option>
+          <option value="civic-type-r">Honda Civic Type R</option>
+          <option value="crv">Honda CR-V EX-L Hybrid</option>
+          <option value="brv">Honda BR-V 2026</option>
+          <option value="pilot">Honda Pilot LX 2026</option>
+          <option value="hrv">Honda HR-V 2026</option>
+          <option value="grand-i10">Hyundai Grand i10</option>
+          <option value="accent">Hyundai Accent</option>
+          <option value="creta">Hyundai Creta 2026</option>
+          <option value="creta-grand">Hyundai Creta Grand 2026</option>
+          <option value="kona">Hyundai Kona 2026</option>
+          <option value="venue">Hyundai Venue 2026</option>
+          <option value="k3">Kia K3 Sedán 2024</option>
+          <option value="picanto">Kia Picanto 2024</option>
+          <option value="soluto">Kia Soluto 2024</option>
+          <option value="sonet">Kia Sonet 2024</option>
+          <option value="sportage">Kia Sportage 2026</option>
+          <option value="xtrail">Nissan X-Trail 2025</option>
+          <option value="kait">Nissan Kait Sense CVT 2026</option>
+          <option value="kicks-exclusive">Nissan Kicks Exclusive 2026</option>
+          <option value="magnite">Nissan Magnite Advance CVT 2025</option>
+          <option value="kicks-sense">Nissan Kicks Sense CVT 2026</option>
+          <option value="pathfinder">Nissan Pathfinder Advance 2026</option>
+          <option value="innova">Toyota Innova</option>
+          <option value="yaris">Toyota Yaris</option>
+          <option value="agya">Toyota Agya</option>
+          <option value="hilux-gr">Toyota Hilux GR Sport</option>
+          <option value="prado">Toyota Land Cruiser Prado</option>
+          <option value="raize">Toyota Raize 2026</option>
+          <option value="yaris-cross">Toyota Yaris Cross</option>
+          <option value="coaster">Toyota Coaster</option>
+          <option value="hilux">Toyota Hilux</option>
+          <option value="corolla">Toyota Corolla 2026</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="auto-b">Segundo modelo</label>
+          <select id="auto-b">
+          <option value="city">Honda City EX 2024</option>
+          <option value="civic-type-r">Honda Civic Type R</option>
+          <option value="crv">Honda CR-V EX-L Hybrid</option>
+          <option value="brv">Honda BR-V 2026</option>
+          <option value="pilot">Honda Pilot LX 2026</option>
+          <option value="hrv">Honda HR-V 2026</option>
+          <option value="grand-i10">Hyundai Grand i10</option>
+          <option value="accent">Hyundai Accent</option>
+          <option value="creta">Hyundai Creta 2026</option>
+          <option value="creta-grand">Hyundai Creta Grand 2026</option>
+          <option value="kona">Hyundai Kona 2026</option>
+          <option value="venue">Hyundai Venue 2026</option>
+          <option value="k3">Kia K3 Sedán 2024</option>
+          <option value="picanto">Kia Picanto 2024</option>
+          <option value="soluto">Kia Soluto 2024</option>
+          <option value="sonet">Kia Sonet 2024</option>
+          <option value="sportage">Kia Sportage 2026</option>
+          <option value="xtrail">Nissan X-Trail 2025</option>
+          <option value="kait">Nissan Kait Sense CVT 2026</option>
+          <option value="kicks-exclusive">Nissan Kicks Exclusive 2026</option>
+          <option value="magnite">Nissan Magnite Advance CVT 2025</option>
+          <option value="kicks-sense">Nissan Kicks Sense CVT 2026</option>
+          <option value="pathfinder">Nissan Pathfinder Advance 2026</option>
+          <option value="innova">Toyota Innova</option>
+          <option value="yaris">Toyota Yaris</option>
+          <option value="agya">Toyota Agya</option>
+          <option value="hilux-gr">Toyota Hilux GR Sport</option>
+          <option value="prado">Toyota Land Cruiser Prado</option>
+          <option value="raize">Toyota Raize 2026</option>
+          <option value="yaris-cross">Toyota Yaris Cross</option>
+          <option value="coaster">Toyota Coaster</option>
+          <option value="hilux">Toyota Hilux</option>
+          <option value="corolla">Toyota Corolla 2026</option>
+          </select>
+        </div>
+        <button class="button" id="compare-button" type="button"><i class="fa-solid fa-arrows-left-right" aria-hidden="true"></i> Comparar</button>
+      </div>
+
+      <div class="comparison-table-wrap">
+        <table class="comparison-table">
+          <caption>Características principales</caption>
+          <thead><tr><th scope="col">Característica</th><th scope="col">Modelo A</th><th scope="col">Modelo B</th></tr></thead>
+          <tbody id="comparison-body"></tbody>
+        </table>
+      </div>
+      <p class="comparison-note"><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Para confirmar disponibilidad, versiones o equipamiento, consulta con un asesor.</p>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div>
+    <a class="footer-brand" href="index.html">Car<span>Center</span></a>
+    <p>Servicios Automotrices</p>
+  </div>
+  <div class="footer-links">
+    <a href="catalogo.html">Catálogo</a>
+    <a href="comparador.html">Comparador</a>
+    <a href="contacto.html">Contacto</a>
+  </div>
+  <small>© 2026 CarCenter Panamá.</small>
+</footer>
+<script src="js/main.js"></script>
+<script src="js/comparador.js"></script>
+</body>
+</html>
